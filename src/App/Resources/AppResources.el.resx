@@ -1905,7 +1905,7 @@
     <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
   </data>
   <data name="AddASend" xml:space="preserve">
-    <value>Προσθήκη Send</value>
+    <value>Add a Send</value>
     <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
   </data>
   <data name="CopyLink" xml:space="preserve">
@@ -1992,12 +1992,12 @@
     <comment>'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated.</comment>
   </data>
   <data name="PasswordPrompt" xml:space="preserve">
-    <value>Προτροπή κύριου κωδικού πρόσβασης</value>
+    <value>Master password re-prompt</value>
   </data>
   <data name="PasswordConfirmation" xml:space="preserve">
-    <value>Επιβεβαίωση κύριου κωδικού πρόσβασης</value>
+    <value>Master password confirmation</value>
   </data>
   <data name="PasswordConfirmationDesc" xml:space="preserve">
-    <value>Αυτή η ενέργεια προστατεύεται, για να συνεχίσετε, πληκτρολογήστε ξανά τον κύριο κωδικό πρόσβασης για να επαληθεύσετε την ταυτότητά σας.</value>
+    <value>This action is protected, to continue please re-enter your master password to verify your identity.</value>
   </data>
 </root>

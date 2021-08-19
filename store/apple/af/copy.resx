@@ -118,54 +118,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Name" xml:space="preserve">
-    <value>Bitwarden Wagwoordbestuurder</value>
+    <value>Bitwarden Password Manager</value>
     <comment>Max 30 characters</comment>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Bitwarden, Inc. is die moederbedryf van 8bit Solutions LLC.
+    <value>Bitwarden, Inc. is the parent company of 8bit Solutions LLC.
 
-BESTE WAGWOORDBESTUURDER VOLGENS THE VERGE, U.S. NEWS &amp; WORLD REPORT, CNET EN ANDER.
+NAMED BEST PASSWORD MANAGER BY THE VERGE, U.S. NEWS &amp; WORLD REPORT, CNET, AND MORE.
 
-Beheer, bewaar, beveilig en deel ’n onbeperkte aantal wagwoorde op ’n onbeperkte aantal toestelle, waar u ookal is. Bitwarden bied oopbronwagwoordbestuuroplossings voor elk, hetsy tuis, op kantoor of op die pad.
+Manage, store, secure, and share unlimited passwords across unlimited devices from anywhere. Bitwarden delivers open source password management solutions to everyone, whether at  home, at work, or on the go.
 
-Genereer sterk, unieke en lukrake wagwoorde gebaseer op beveiligingsvereistes vir elke webwerf wat u besoek.
+Generate strong, unique, and random passwords based on security requirements for every website you frequent.
 
-Bitwarden Send verstuur geënkripteerde inligting --- lêers en skoonteks -- vinnig regstreeks aan enigeen.
+Bitwarden Send quickly transmits encrypted information --- files and plaintext -- directly to anyone.
 
-Bitwarden bied Span- en Ondernemingsplanne vir maatskappye, sodat u wagwoorde veilig met kollega’s kan deel.
+Bitwarden offers Teams and Enterprise plans for companies so you can securely share passwords with colleagues.
 
-Waarom Bitwarden:
+Why Choose Bitwarden:
 
-Eersteklasenkripsie
-Wagwoorde word beskerm met gevorderde eind-tot-eind-enkodering (AES-256 bit, salted hashtag en PBKDF2 SHA-256) sodat u data veilig en privaat bly.
+World-Class Encryption
+Passwords are protected with advanced end-to-end encryption (AES-256 bit, salted hashtag, and PBKDF2 SHA-256) so your data stays secure and private.
 
-Ingeboude wagwoordgenereerder
-Genereer sterk, unieke en lukrake wagwoorde gebaseer op beveiligingsvereistes vir elke webwerf wat u besoek.
+Built-in Password Generator
+Generate strong, unique, and random passwords based on security requirements for every website you frequent.
 
-Wêreldwye vertalings
-Bitwarden-vertalings bestaan ​​in 40 tale en groei danksy ons wêreldwye gemeenskap.
+Global Translations
+Bitwarden translations exist in 40 languages and are growing, thanks to our global community.
 
-Kruisplatformtoepassings
-Beveilig en deel gevoelige data in u Bitwarden kluis vanuit enige blaaier, mobiele toestel of werkskermbedryfstelsel, en meer.</value>
+Cross-Platform Applications
+Secure and share sensitive data within your Bitwarden Vault from any browser, mobile device, or desktop OS, and more.
+</value>
   <comment>Max 4000 characters</comment>
   </data>
   <data name="Keywords" xml:space="preserve">
-    <value>bit warden,8bit,wagwoord,gratis wagwoordbestuurder,wagwoordbestuurder,aantekenbestuurder</value>
+    <value>bit warden,8bit,password,free password manager,password manager,login manager</value>
     <comment>Max 100 characters</comment>
   </data>
   <data name="Screenshot1" xml:space="preserve">
-    <value>Bestuur al u aantekeninge en wagwoorde vanuit ’n beveiligde kluis</value>
+    <value>Manage all your logins and passwords from a secure vault</value>
   </data>
   <data name="Screenshot2" xml:space="preserve">
-    <value>Genereer outomaties sterk, lukrake en veilige wagwoorde</value>
+    <value>Automatically generate strong, random, and secure passwords</value>
   </data>
   <data name="Screenshot3" xml:space="preserve">
-    <value>Beskerm u kluis met Touch ID, PIN-kode of hoofwagwoord</value>
+    <value>Protect your vault with Touch ID, PIN code, or master password</value>
   </data>
   <data name="Screenshot4" xml:space="preserve">
-    <value>Outovul aantekeninge in Safari, Chrome en honderde ander toeps</value>
+    <value>Auto-fill logins from Safari, Chrome, and hundreds of other apps</value>
   </data>
   <data name="Screenshot5" xml:space="preserve">
-    <value>Sinchroniseer en kry toegang tot u kluis vanaf meerdere toestelle</value>
+    <value>Sync and access your vault from multiple devices</value>
   </data>
 </root>
