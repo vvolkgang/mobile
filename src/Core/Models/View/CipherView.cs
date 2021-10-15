@@ -1,5 +1,6 @@
 ﻿using Bit.Core.Enums;
 using Bit.Core.Models.Domain;
+using Bit.Core.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -71,7 +72,7 @@ namespace Bit.Core.Models.View
             }
         }
 
-        public List<KeyValuePair<string, int>> LinkedFieldOptions => Item.LinkedMetadata;
+        //public List<KeyValuePair<string, int>> LinkedFieldOptions => Item.LinkedMetadata;
         public string SubTitle => Item.SubTitle;
         public bool Shared => OrganizationId != null;
         public bool HasPasswordHistory => PasswordHistory?.Any() ?? false;
@@ -108,6 +109,33 @@ namespace Bit.Core.Models.View
         public string LinkedFieldI18nKey(int id)
         {
             return LinkedFieldOptions.Find(lfo => lfo.Value == id).Key;
+        }
+
+        //TEST
+        public List<KeyValuePair<string, int>> LinkedFieldOptions
+        {
+            get
+            {
+                var props = Item.GetType().GetProperties();
+                var linkedMetadata = props
+                    .Select(p => {
+                        var metadata = p
+                            .GetCustomAttributes(false)
+                            .FirstOrDefault(attr => attr.GetType() == typeof(LinkedMetadataAttribute))
+                            as LinkedMetadataAttribute;
+
+                        if (metadata == null)
+                        {
+                            return default;
+                        }
+
+                        var i18nKey = metadata.I18nKey ?? p.Name;
+                        return new KeyValuePair<string, int>(i18nKey, metadata.Id);
+            })
+                    .Where(kvp => !kvp.Equals(default(KeyValuePair<string, int>)));
+
+                return linkedMetadata.ToList();
+            }
         }
 
     }

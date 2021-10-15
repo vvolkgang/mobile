@@ -1,4 +1,5 @@
 ﻿using Bit.Core.Models.Domain;
+using Bit.Core.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,9 @@ namespace Bit.Core.Models.View
             PasswordRevisionDate = l.PasswordRevisionDate;
         }
 
+        [LinkedMetadata(0)]
         public string Username { get; set; }
+        [LinkedMetadata(1)]
         public string Password { get; set; }
         public DateTime? PasswordRevisionDate { get; set; }
         public string Totp { get; set; }
