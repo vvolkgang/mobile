@@ -9,8 +9,15 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>pdbonly</DebugType>
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;FEATURE_GENERATORPAGE_OFF</DefineConstants>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
+
+  <Target Name="FeatureFlags" BeforeTargets="Build">
+    <ItemGroup>
+      <Compile Remove="Pages\Generator\*" Condition="$(DefineConstants.Contains(FEATURE_GENERATORPAGE_OFF))" />
+    </ItemGroup>
+  </Target>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.4.0" />

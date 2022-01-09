@@ -35,13 +35,14 @@ namespace Bit.App.Pages
             };
             Children.Add(_sendGroupingsPage);
 
-            _generatorPage = new NavigationPage(new GeneratorPage(true, null, this))
+#if !FEATURE_GENERATORPAGE_OFF
+            _generatorPage = new NavigationPage(new Page())
             {
                 Title = AppResources.Generator,
                 IconImageSource = "refresh.png"
             };
             Children.Add(_generatorPage);
-
+#endif
             var settingsPage = new NavigationPage(new SettingsPage(this))
             {
                 Title = AppResources.Settings,
@@ -107,10 +108,12 @@ namespace Bit.App.Pages
                 {
                     // Load something?
                 }
+#if !FEATURE_GENERATORPAGE_OFF
                 else if (navPage.RootPage is GeneratorPage genPage)
                 {
                     await genPage.InitAsync();
                 }
+#endif
                 else if (navPage.RootPage is SettingsPage settingsPage)
                 {
                     await settingsPage.InitAsync();

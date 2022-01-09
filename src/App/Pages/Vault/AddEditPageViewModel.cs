@@ -574,6 +574,9 @@ namespace Bit.App.Pages
                     return;
                 }
             }
+
+#if !FEATURE_GENERATORPAGE_OFF
+
             var page = new GeneratorPage(false, async (password) =>
             {
                 Cipher.Login.Password = password;
@@ -581,6 +584,9 @@ namespace Bit.App.Pages
                 await Page.Navigation.PopModalAsync();
             });
             await Page.Navigation.PushModalAsync(new NavigationPage(page));
+#else
+            await _platformUtilsService.ShowDialogAsync("Password Generator feature not implemented yet :(", null, AppResources.Yes, AppResources.No);
+#endif
         }
 
         public async void UriOptions(LoginUriView uri)
